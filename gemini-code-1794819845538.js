@@ -1,1 +1,0 @@
-console.log("The Malabar Room website loaded successfully.");
