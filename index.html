@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Malabar Room | Premium Dining</title>
+  <style>
+    body { font-family: 'Playfair Display', serif; margin: 0; padding: 0; background-color: #121212; color: #f5f5f5; line-height: 1.6; }
+    header { background: #0a0a0a; border-bottom: 1px solid #d4af37; padding: 2rem 0; text-align: center; }
+    h1 { color: #d4af37; margin: 0; font-size: 2.5rem; letter-spacing: 2px; text-transform: uppercase; }
+    p.subtitle { color: #aaa; font-family: 'Helvetica Neue', sans-serif; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 3px; }
+    nav { display: flex; justify-content: center; gap: 30px; background: #000; padding: 15px; }
+    nav a { color: #d4af37; text-decoration: none; font-family: 'Helvetica Neue', sans-serif; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+    nav a:hover { color: #fff; }
+    section { padding: 60px 20px; max-width: 900px; margin: 0 auto; text-align: center; }
+    .hero { padding: 100px 20px; border-bottom: 1px solid #333; }
+    .hero h2 { font-size: 2.2rem; color: #fff; font-weight: normal; }
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; text-align: left; }
+    .menu-item h3 { color: #d4af37; margin-bottom: 5px; border-bottom: 1px dashed #333; padding-bottom: 5px; }
+    .menu-item p { color: #ccc; font-family: 'Helvetica Neue', sans-serif; font-size: 0.9rem; }
+    .btn { display: inline-block; background: #d4af37; color: #000; padding: 15px 30px; text-decoration: none; font-family: 'Helvetica Neue', sans-serif; text-transform: uppercase; font-weight: bold; margin-top: 30px; letter-spacing: 1px; transition: background 0.3s; }
+    .btn:hover { background: #b8962e; }
+    form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 30px auto 0; text-align: left; font-family: 'Helvetica Neue', sans-serif; }
+    input, select { padding: 12px; background: #222; border: 1px solid #444; color: #fff; }
+    input:focus, select:focus { outline: none; border-color: #d4af37; }
+    footer { text-align: center; padding: 40px; background: #0a0a0a; color: #777; font-family: 'Helvetica Neue', sans-serif; font-size: 0.8rem; border-top: 1px solid #333; }
+  </style>
+  <script type="module" crossorigin src="/your-repo-name/assets/index-D_5Lcx84.js"></script>
+</head>
+<body>
+  <header>
+    <h1>The Malabar Room</h1>
+    <p class="subtitle">Modern Coastal Fine Dining • Adelaide</p>
+  </header>
+  
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu Highlights</a>
+    <a href="#about">Our Story</a>
+    <a href="#reservations">Reservations</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>A Culinary Journey Awaits</h2>
+    <p style="color: #bbb; max-width: 600px; margin: 0 auto; font-family: 'Helvetica Neue', sans-serif;">Experience a modern interpretation of vibrant coastal flavors and premium woodfired techniques, designed for the sophisticated palate.</p>
+    <a href="#reservations" class="btn">Book a Table</a>
+  </section>
+
+  <section id="menu">
+    <h2 style="color: #d4af37; font-size: 2rem;">Tasting Menu Highlights</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Charred King Prawns</h3>
+        <p>Local South Australian prawns, smoked coconut infused oil, curry leaf dust.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Woodfired Spiced Lamb</h3>
+        <p>Slow-roasted lamb shoulder, rich pepper reduction, garlic butter naan.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Coastal Catch</h3>
+        <p>Pan-seared barramundi, tamarind glaze, roasted root vegetables.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Saffron Cardamom Mousse</h3>
+        <p>Whipped saffron cream, pistachio crumble, rose water gel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="border-top: 1px solid #333;">
+    <h2 style="color: #d4af37; font-size: 2rem;">Our Story</h2>
+    <p style="color: #bbb; font-family: 'Helvetica Neue', sans-serif;">The Malabar Room elevates traditional hospitality by merging the rich, aromatic spice heritage of the coastal tropics with modern Australian fine dining aesthetics. Every dish is crafted to deliver an unforgettable front-of-house experience and a celebration of premium ingredients.</p>
+  </section>
+
+  <section id="reservations" style="border-top: 1px solid #333;">
+    <h2 style="color: #d4af37; font-size: 2rem;">Make a Reservation</h2>
+    <p style="color: #bbb; font-family: 'Helvetica Neue', sans-serif;">Join us for an exclusive dining experience. Please fill out the form below to secure your table.</p>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <select required>
+        <option value="" disabled selected>Number of Guests</option>
+        <option value="1">1 Person</option>
+        <option value="2">2 People</option>
+        <option value="3">3 People</option>
+        <option value="4">4 People</option>
+        <option value="5+">5+ People (Private Dining)</option>
+      </select>
+      <input type="date" required>
+      <button type="submit" class="btn" style="border: none; cursor: pointer; text-align: center; margin-top: 10px;">Confirm Request</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 The Malabar Room. Academic Project Submission.</p>
+  </footer>
+  
+</body>
+</html>
